@@ -20,6 +20,7 @@ body {
   width: 25vw;
   background-color: white;
   border-radius: 2rem;
+  position: relative;
 }
 
 .stories-section {
@@ -34,11 +35,30 @@ body {
 }
 
 .story {
-  margin: 10px 0px;
+  margin: 10px 2px;
   height: 70px;
   width: 70px;
   border-radius: 50%;
   border: 2px solid red;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.story img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 50%;
+  /* z-index: 1; */
+}
+
+.my-story {
+  margin: 10px 0px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -59,6 +79,21 @@ body {
   left: 65%;
   color: rgb(49, 49, 226);
   cursor: pointer;
+  z-index: 1;
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  z-index: -2;
+  position: absolute;
+  border-radius: 2rem;
+  margin-left: -10px;
+  transition: all 0.3s ease;
 }
 
 .timeline-profile {
