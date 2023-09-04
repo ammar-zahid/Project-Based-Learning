@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  padding: 0px 70px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#nav {
+  height: 80px;
+  padding: 15px 0;
+  /* margin: 0px 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+#navElements {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#navButtons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+#container #left h1 {
+  font-size: 4rem;
+}
+
+#twh1 {
+  margin-left: 40px;
+}
+
+#thh1 {
+  margin-left: 80px;
+}
+
+#container #right {
+  margin-right: 100px;
+  margin-top: 40px;
+  width: 25rem;
+  height: 28rem;
+  overflow: hidden;
+}
+
+#container #right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#boxes {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.box {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 25px;
+  width: 20%;
+}
+
+.box h3,
+.box p {
+  text-align: center;
+}
